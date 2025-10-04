@@ -1,6 +1,6 @@
-# 🧮 Calculator Application (Tkinter)
+# Calculator Application (Tkinter)
 
-## 📝 About
+## About
 The **Calculator Application** is a simple yet powerful desktop GUI app built using **Python’s Tkinter library**.  
 It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division in a user-friendly interface.
 
@@ -8,16 +8,16 @@ This project demonstrates core GUI programming concepts and is ideal for Python 
 
 ---
 
-## 🚀 Features
-- 🧠 Perform basic mathematical operations (`+`, `-`, `*`, `/`)
-- 🧹 Clear input using the **C** button
-- ⚡ Real-time calculation display
-- 💻 Built with Tkinter — lightweight and easy to run
-- 👨‍💻 Beginner-friendly and customizable
+## Features
+- Perform basic mathematical operations (`+`, `-`, `*`, `/`)
+-  Clear input using the **C** button
+- Real-time calculation display
+- Built with Tkinter — lightweight and easy to run
+- Beginner-friendly and customizable
 
 ---
 
-## 🧩 How It Works
+## How It Works
 1. The app opens a GUI window with buttons for digits and operators.
 2. Each button press appends the value to an internal expression string.
 3. When `=` is pressed, the expression is evaluated using Python’s `eval()` function.
@@ -26,7 +26,7 @@ This project demonstrates core GUI programming concepts and is ideal for Python 
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Step 1 — Clone the Repository
 ```bash
@@ -45,7 +45,7 @@ python calculator.py
 
 ---
 
-## 💡 Example Output
+## Example Output
 ```
 +--------------------------+
 |        12 + 8            |
@@ -60,14 +60,14 @@ Result → 20
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 - **Python 3**
 - **Tkinter GUI Library**
 - **eval()** function for expression evaluation
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 - Add a **scientific mode** (square root, power, etc.)
 - Add **keyboard input support**
 - Improve UI with modern themes (e.g., `ttkbootstrap`)
@@ -75,7 +75,6 @@ Result → 20
 
 ---
 
-## 🧾 License
+## License
 This project is open-source and available under the **MIT License**.  
 Feel free to use and modify it for learning purposes.
-
