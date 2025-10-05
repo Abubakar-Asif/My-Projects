@@ -59,41 +59,38 @@ class Command () :
             print ("Please enter valid command...")
             speak ("Please enter valid command...")
             
-def output () :
-    speak ("Initializing Jarvis...")  
-    speak ("Please enter the name of the assistant to activate it.")
-    while True :
-        print ("Please enter the name of the assistant to activate it : ")
-        data = input ().lower ()
-        if 'jarvis' in data :
-            print ("Jarvis activate...")
-            speak ("Jarvis activate...")
-            print ("Hello sir , how may i assist you ?")
-            speak ("Hello sir , how may i assist you ?")
-            break
-        else :
-            print ("Make sure you activate the assistant before enter the command.")
-            speak ("Make sure you activate the assistant before enter the command.")
+    def output (self) :
+        speak ("Initializing Jarvis...")  
+        speak ("Please enter the name of the assistant to activate it.")
+        while True :
+            print ("Please enter the name of the assistant to activate it : ")
+            data = input ().lower ()
+            if 'jarvis' in data :
+                print ("Jarvis activate...")
+                speak ("Jarvis activate...")
+                print ("Hello sir , how may i assist you ?")
+                speak ("Hello sir , how may i assist you ?")
+                break
+            else :
+                print ("Make sure you activate the assistant before enter the command.")
+                speak ("Make sure you activate the assistant before enter the command.")
 
-    while True :
-        data_2 = input ().lower ()
-        if "search" in data_2 :
-            cmd.websearch (data_2)
-        elif "open" in data_2 :
-            cmd.webprocess (data_2)
-        elif ("exit" in data_2) or ('quit' in data_2) :
-            print ("Thank you for using this program...")
-            speak ("Thank you for using this program...")
-            return "exit"
-        else :
-            print ("Please entered valid command.")
-            speak ("Please entered valid command.")
+        while True :
+            data_2 = input ().lower ()
+            if "search" in data_2 :
+                cmd.websearch (data_2)
+            elif "open" in data_2 :
+                cmd.webprocess (data_2)
+            elif ("exit" in data_2) or ('quit' in data_2) :
+                print ("Thank you for using this program...")
+                speak ("Thank you for using this program...")
+                break
+            else :
+                print ("Please entered valid command.")
+                speak ("Please entered valid command.")
         
 if __name__ == "__main__" :
     cmd = Command ()
-    while True :
-        output = output ()
-        if "exit" in output : 
-            break
-
+    cmd.output ()
+     
 # The End.
